@@ -2,14 +2,14 @@
 Documentation    Essa suite testa o site da Amazon.com.br
 Resource         amazon_resources.robot
 Test Setup       Abrir o navegador
-Test Teardown    Fechar o navegador
+#Test Teardown    Fechar o navegador
 
 *** Test Cases ***
 caso de testes 01 - Acesso ao menu "Eletronicos"
     [Documentation]  esse teste verifica o menu eletronico do site da Amazon.com.br
     ...              e verifica a categoria Computadores e Informatica
     [Tags]           menus  categorias
-    Acessar a home page do site Amazon.com.br
+    Acessar a home page do site amazon.com.br
 #     Entrar no menu "Eletrônicos"
 #     Verificar se o titulo da pagina fica "Eletronicos e Tecnologia | Amazon.com.br"
 #     Verificar se aparece a frase "Eletronicos e Tecnologia"
