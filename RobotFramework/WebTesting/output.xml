@@ -1,53 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.5 on win32)" generated="20230504 13:14:52.682" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.10.5 on win32)" generated="20230505 00:45:16.945" rpa="false" schemaversion="3">
 <suite id="s1" name="Amazon Testes" source="C:\Users\peniel.araujo\OneDrive - Spread Tecnologia\Projeto\CursoUdemy\RobotFramework\WebTesting\amazon_testes.robot">
 <test id="s1-t1" name="caso de testes 01 - Acesso ao menu &quot;Eletronicos&quot;" line="8">
 <kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230504 13:14:52.962" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20230504 13:14:52.961" endtime="20230504 13:14:54.270"/>
+<msg timestamp="20230505 00:45:17.161" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230505 00:45:17.160" endtime="20230505 00:45:17.957"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230504 13:14:54.270" endtime="20230504 13:14:54.401"/>
+<status status="PASS" starttime="20230505 00:45:17.957" endtime="20230505 00:45:18.083"/>
 </kw>
-<status status="PASS" starttime="20230504 13:14:52.961" endtime="20230504 13:14:54.401"/>
+<status status="PASS" starttime="20230505 00:45:17.160" endtime="20230505 00:45:18.083"/>
 </kw>
 <kw name="Acessar a home page do site amazon.com.br" library="amazon_resources">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230504 13:14:54.402" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
-<status status="PASS" starttime="20230504 13:14:54.402" endtime="20230504 13:14:56.480"/>
+<msg timestamp="20230505 00:45:18.084" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
+<status status="PASS" starttime="20230505 00:45:18.084" endtime="20230505 00:45:20.676"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230504 13:14:56.481" endtime="20230504 13:14:56.538"/>
+<status status="PASS" starttime="20230505 00:45:20.676" endtime="20230505 00:45:20.714"/>
 </kw>
-<status status="PASS" starttime="20230504 13:14:54.402" endtime="20230504 13:14:56.538"/>
+<status status="PASS" starttime="20230505 00:45:18.084" endtime="20230505 00:45:20.714"/>
+</kw>
+<kw name="Entrar no menu &quot;Eletrônicos&quot;" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Locator=${MENU_ELETRONICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230505 00:45:20.716" level="INFO">Clicking element 'Locator=//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]'.</msg>
+<msg timestamp="20230505 00:45:20.993" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230505 00:45:20.993" level="FAIL">Element with locator 'Locator=//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not found.</msg>
+<status status="FAIL" starttime="20230505 00:45:20.716" endtime="20230505 00:45:20.997"/>
+</kw>
+<status status="FAIL" starttime="20230505 00:45:20.716" endtime="20230505 00:45:20.997"/>
+</kw>
+<kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" library="amazon_resources">
+<status status="NOT RUN" starttime="20230505 00:45:20.998" endtime="20230505 00:45:20.998"/>
 </kw>
 <doc>esse teste verifica o menu eletronico do site da Amazon.com.br
 e verifica a categoria Computadores e Informatica</doc>
 <tag>categorias</tag>
 <tag>menus</tag>
-<status status="PASS" starttime="20230504 13:14:52.960" endtime="20230504 13:14:56.540"/>
+<status status="FAIL" starttime="20230505 00:45:17.159" endtime="20230505 00:45:20.998">Element with locator 'Locator=//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not found.</status>
 </test>
 <doc>Essa suite testa o site da Amazon.com.br</doc>
-<status status="PASS" starttime="20230504 13:14:52.687" endtime="20230504 13:14:56.543"/>
+<status status="FAIL" starttime="20230505 00:45:16.948" endtime="20230505 00:45:21.000"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">categorias</stat>
-<stat pass="1" fail="0" skip="0">menus</stat>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Amazon Testes">Amazon Testes</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Amazon Testes">Amazon Testes</stat>
 </suite>
 </statistics>
 <errors>
